@@ -54,9 +54,9 @@ const DynamicClock = ({ circleStroke="FFFAFA", circleFill="none", circleRadius=1
             {/* Clock */}
             <circle cx="14" cy="14" r={safeRadius} stroke={'#' + circleStroke} strokeWidth="1" fill={circleFill} />
             {/* Hours */}
-            <line x1="14" y1="14" x2={12 + safeHourLen * Math.cos(Math.PI / 180 * (hourAngle - 90))} y2={14 + safeHourLen * Math.sin(Math.PI / 180 * (hourAngle - 90))} stroke={'#' + hourColor} strokeWidth="1" strokeLinecap="round" />
+            <line x1="14" y1="14" x2={14 + safeHourLen * Math.cos(Math.PI / 180 * (hourAngle - 90))} y2={14 + safeHourLen * Math.sin(Math.PI / 180 * (hourAngle - 90))} stroke={'#' + hourColor} strokeWidth="1" strokeLinecap="round" />
             {/* Minutes */}
-            <line x1="14" y1="14" x2={12 + safeMinLen * Math.cos(Math.PI / 180 * (minuteAngle - 90))} y2={14 + safeMinLen * Math.sin(Math.PI / 180 * (minuteAngle - 90))} stroke={'#' + minColor} strokeWidth="1" strokeLinecap="round" />
+            <line x1="14" y1="14" x2={14 + safeMinLen * Math.cos(Math.PI / 180 * (minuteAngle - 90))} y2={14 + safeMinLen * Math.sin(Math.PI / 180 * (minuteAngle - 90))} stroke={'#' + minColor} strokeWidth="1" strokeLinecap="round" />
         </svg>
     );
 };
